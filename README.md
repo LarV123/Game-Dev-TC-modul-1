@@ -18,7 +18,29 @@ Unity adalah Game Engine Cross-Platform yang dikembangkan oleh Unity Technologie
 - (F) Project Window menunjukkan file atau asset yang dapat digunakan dalam gamenya.
 (https://docs.unity3d.com/Manual/UsingTheEditor.html)
 ## Game Object dan Component
-
+### Game Object
+Game Object adalah representasi objek didalam unity. Game Object dapat merepresentasikan karakter, prop, pohon, dan lain-lain. Game Object berfungsi sebagai container component. Component ini yang mempunyai fungsi atau tujuan masing-masing.
+#### Membuat Game Object
+![thread](img/Membuat-Game-Object.png)
+Untuk membuat game object, klik kanan di hierarchy, lalu klik Create Empty.
+#### Mengganti nama Game Object
+Untuk mengganti nama Game Object, dapat klik kanan suatu game object lalu rename. Selain itu dapat menggunakan shortcut F2.
+(https://docs.unity3d.com/Manual/class-GameObject.html)
+### Transform Component
+Setiap Game Object minimal mempunyai satu komponen, yaitu Transform. Transform mengontrol posisi, besar, dan rotasi game objek. Selain itu transform juga memungkinkan konsep parenting.
+(https://docs.unity3d.com/Manual/Components.html)
+### Other Component
+Selain itu Game Object juga dapat mempunyai komponen-komponen lain.
+#### Adding Component
+![thread](img/Menambahkan-Component.png)
+Untuk menambahkan komponen lain. Klik game object yang ingin ditambahkan. Lalu klik Add Component dan pilih component yang mau ditambahkan.
+#### Removing Component
+![thread](img/Menghapus-Component.png)
+Untuk menghapus komponen. Klik simbol tiga titik di pojok kanan component. Lalu klik Remove Component.
+#### Editing Component
+![thread](img/Mengedit-Component.png)
+Mengubah properti component dengan merubah isi checkbox, dan text box yang ada di component masing masing.
+(https://docs.unity3d.com/Manual/UsingComponents.html)
 ## Mono Behaviour Script
 ## Input System
 ## Mengubah Properti Component
