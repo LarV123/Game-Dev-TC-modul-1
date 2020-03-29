@@ -42,5 +42,33 @@ Untuk menghapus komponen. Klik simbol tiga titik di pojok kanan component. Lalu 
 Mengubah properti component dengan merubah isi checkbox, dan text box yang ada di component masing masing.
 (https://docs.unity3d.com/Manual/UsingComponents.html)
 ## Mono Behaviour Script
+### Membuat Script
+Klik kanan di project view > Create > C# Script
+### Anatomy Script
+Berikut adalah script default yang akan dibuat oleh unity.
+```
+using UnityEngine;
+using System.Collections;
+
+public class Movement : MonoBehaviour {
+
+    // Use this for initialization
+    void Start () {
+    
+    }
+    
+    // Update is called once per frame
+    void Update () {
+    
+    }
+}
+```
+Dapat dilihat ada 2 function yang dibuat oleh unity
+- ```Start``` dipanggil sekali saat game object pertama masuk di scene
+- ```Update``` dipanggil setiap frame
+### Menempelkan script ke game object
+Ada 2 cara,
+1. Drag and drop script dari project view ke object yang diinginkan di hierarchy
+2. Select object di hierarchy, klik add component, lalu cari nama script, tekan script tersebut
 ## Input System
 ## Mengubah Properti Component
