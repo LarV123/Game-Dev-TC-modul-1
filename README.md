@@ -152,11 +152,49 @@ Selanjutnya, kita akan membuat script. Untuk membuat script, klik kanan di proje
 Double klik script tersebut. Maka kode akan terbuka dalam code editor.
 Scriptnya akan terlihat seperti berikut.
 
-![thread](img/Default-Script.png)
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Movement : MonoBehaviour{
+
+    void Start(){
+
+    }
+
+    void Update(){
+
+    }
+
+}
+```
 
 Tulislah kode berikut ke dalam script.
 
-![thread](img/Script-Finish.png)
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Movement : MonoBehaviour{
+
+    private Transform tr;
+    private float speed = 5;
+
+    void Start(){
+        tr = GetComponent<Transform>();
+    }
+
+    void Update(){
+        float x = Input.GetAxis("Horizontal");
+        float y = Input.GetAxis("Vertical");
+
+        tr.Translate(new Vector3(x * Time.deltaTime * speed, y * Time.deltaTime * speed));
+    }
+
+}
+```
 
 Masukkan script tersebut ke dalam game object tadi.
 
