@@ -207,6 +207,7 @@ Jalankan game dengan klik tombol play di atas tengah.
 ![thread](img/Play.png)
 
 Selamat, kamu sudah membuat kontrol player sederhana.
+Untuk mengontrol player, bisa menekan w, a, s, d atau arrow keys.
 Dari script diatas, ada beberapa hal yang terjadi.
 Pertama, kita membuat variabel ```tr``` dan ```speed```. ```speed``` adalah kecepatan player berjalan. Variabel ```tr``` untuk menyimpan component Transform yang akan kita ubah posisinya.
 
